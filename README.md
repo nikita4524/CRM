@@ -147,50 +147,6 @@ The app will be available at `http://localhost:3000`.
 | page       | number | `1`         | Page number                          |
 | limit      | number | `10`        | Items per page (max 100)             |
 
-### Lead Object
-
-```json
-{
-  "_id": "string",
-  "name": "Jane Smith",
-  "email": "jane@company.com",
-  "phone": "+1 (555) 123-4567",
-  "company": "Acme Inc.",
-  "status": "New | Contacted | Qualified | Converted | Lost",
-  "notes": "Met at conference",
-  "createdAt": "2026-06-07T10:00:00.000Z",
-  "updatedAt": "2026-06-07T10:00:00.000Z"
-}
-```
-
----
-
-## Environment Variables
-
-### Backend (`backend/.env`)
-
-```
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/lead-crm
-NODE_ENV=development
-FRONTEND_URL=http://localhost:3000
-```
-
-### Frontend (`frontend/.env.local`)
-
-```
-NEXT_PUBLIC_API_URL=http://localhost:5000/api
-```
-
----
-
-## Deployment
-
-### Backend (Railway / Render / Fly.io)
-
-1. Set `MONGODB_URI` to a MongoDB Atlas connection string
-2. Set `FRONTEND_URL` to your deployed frontend URL
-3. Deploy the `backend/` folder
 
 ### Frontend (Vercel)
 
